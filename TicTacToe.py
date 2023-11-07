@@ -1,3 +1,12 @@
+#References
+#https://youtu.be/KBpfB1qQx8w?feature=shared
+#https://youtu.be/vpodgih0X0Q?feature=shared
+#Audio extract
+#https://youtu.be/d1IHYpU6HdM?feature=shared
+#https://youtu.be/MxASumLq1eY?feature=shared
+#colour Code
+#https://youtube.com/shorts/tSO6T_gR_Cs?feature=shared
+
 import pygame
 import sys
 import pygame.mixer
