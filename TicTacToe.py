@@ -75,7 +75,7 @@ while running:
         winner = grid[0][2]
 
     if not tie and all(all(cell != "" for cell in row) for row in grid) and winner is None:
-        
+
         tie = True
 
     # Draw the background
