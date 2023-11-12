@@ -33,8 +33,8 @@ GRID_SIZE = 3
 CELL_SIZE = WIDTH // GRID_SIZE
 LINE_WIDTH = 5
 LINE_COLOR = (150, 0, 0)
-PLAYER_X = input("Enter Player X Name  : ")
-PLAYER_O = input("Enter Player O Name  : ")
+PLAYER_X = "X"
+PLAYER_O = "Y"
 
 # Initialize the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -123,4 +123,3 @@ while running:
 
 pygame.quit()
 sys.exit()
-
