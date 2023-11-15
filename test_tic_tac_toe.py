@@ -8,7 +8,7 @@ class TestTicTacToe(unittest.TestCase):
 
     def test_place_marker(self):
         self.game.place_marker(1, 1)
-        self.assertEqual(self.game.board[1][1], 'X')
+        self.assertEqual(self.game.board[1][1], 'X'), 'Erroe'
         
         self.game.place_marker(2, 2)
         self.assertEqual(self.game.board[2][2], 'O')
@@ -18,10 +18,31 @@ class TestTicTacToe(unittest.TestCase):
         self.game.board = [['X','X','X'],
                            ['O','',''],
                            ['','','']]
-        self.assertEqual(self.game.get_winner(), 'X')
+        self.assertEqual(self.game.get_winner(), 'X'),'yahoo'
         
         # Test column win 
         self.game.board = [['','O',''],
                            ['','O',''],
                            ['','O','']]
         self.assertEqual(self.game.get_winner(), 'O')
+        
+        # Test diagonal win
+        self.game.board = [['X','',''],
+                           ['','O',''],
+                           ['','','X']]
+        self.assertEqual(self.game.get_winner(), 'X')
+
+        # Test no winner 
+        self.game.board = [['X','O','X'],
+                           ['X','','O'],
+                           ['O','','X']]
+        self.assertIsNone(self.game.get_winner())
+
+    def test_check_tie(self):
+        self.game.board = [['X','O','X'],
+                           ['X','O','O'],
+                           ['O','X','O']]
+        self.assertTrue(self.game.check_tie())
+    
+if __name__ == '__main__':
+    unittest.main()

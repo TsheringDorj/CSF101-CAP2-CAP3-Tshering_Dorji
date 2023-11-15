@@ -119,7 +119,8 @@ while running:
         screen.blit(text, (80, HEIGHT // 2 - 18))
     
         if winner or tie:
-            pygame.time.delay(10)
+    
+            pygame.time.delay(10000)
         
 
     # Update the display
