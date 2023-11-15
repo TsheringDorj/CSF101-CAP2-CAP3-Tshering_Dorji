@@ -118,6 +118,10 @@ while running:
         text = font.render("    It's a tie!", True, (250, 250, 250))  #  color (255, 255, 0)
         screen.blit(text, (80, HEIGHT // 2 - 18))
     
+        if winner or tie:
+            pygame.time.delay(10)
+        
+
     # Update the display
     pygame.display.update()
 
