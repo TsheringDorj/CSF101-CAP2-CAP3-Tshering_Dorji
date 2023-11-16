@@ -8,7 +8,7 @@ class TestTicTacToe(unittest.TestCase):
 
     def test_place_marker(self):
         self.game.place_marker(1, 1)
-        self.assertEqual(self.game.board[1][1], 'X'), 'Erroe'
+        self.assertEqual(self.game.board[1][1], 'X'), 
         
         self.game.place_marker(2, 2)
         self.assertEqual(self.game.board[2][2], 'O')
@@ -18,7 +18,7 @@ class TestTicTacToe(unittest.TestCase):
         self.game.board = [['X','X','X'],
                            ['O','',''],
                            ['','','']]
-        self.assertEqual(self.game.get_winner(), 'X'),'yahoo'
+        self.assertEqual(self.game.get_winner(), 'X'),
         
         # Test column win 
         self.game.board = [['','O',''],
