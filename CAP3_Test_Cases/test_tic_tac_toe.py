@@ -1,7 +1,14 @@
-import unittest
+#Reference
+#https://www.youtube.com/watch?v=JJ9zZ8cyaEk
+#https://www.youtube.com/watch?si=S12ryN5bv1VyYxj_&fbclid=IwAR3EglZae-QalhJKiVTTNoNgAC8r1--dlFEw5jJbwKqri_zDAtKsu1WZ4tU&v=v1MtwCPTmBI&feature=youtu.be
+#https://www.youtube.com/watch?si=8V9ULoW1nwVc8gxe&fbclid=IwAR2PbuOp4PcRZH58C3yKuEWHB7Jm-NF-O4_I5IxBTolhVNIAqXLnNLJorM8&v=96mDQrlceEk&feature=youtu.be
+#https://www.youtube.com/watch?v=mzlH8lp4ISA
+#https://youtu.be/YbpKMIUjvK8?feature=shared
+
+import unittest #using unittest tool
 import pygame
 from unittest.mock import patch
-
+#We just create a mock object, set its now() method to return our fixed date, then patch datetime.datetime to use our mock
 
 #Initialize the screen
 class TestGameScreen(unittest.TestCase):
